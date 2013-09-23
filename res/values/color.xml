@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    <color name="input_name">#fd4802</color>  
+     <color name="description">#4e4650</color>
+</resources>

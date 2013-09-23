@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgs480x800"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SingInActivity" >
+
+    <ImageView
+        android:id="@+id/singtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_title480x800" />
+
+    <RelativeLayout
+        android:id="@+id/inputarea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/singtitle"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/login_input480x800" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dip"
+            android:layout_marginTop="55dip"
+            android:text="NAME"
+            android:textColor="@color/input_name"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/ed_name"
+            style="@style/my_edittext_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dip"
+            android:layout_marginTop="55dip"
+            android:layout_toRightOf="@id/name"
+               android:maxWidth="310px"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="60dip"
+            android:layout_marginTop="17dip"
+            android:text="EMAIL"
+            android:textColor="@color/input_name"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/ed_email"
+            style="@style/my_edittext_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_name"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="15dip"
+            android:maxWidth="310px"
+            android:layout_toRightOf="@id/email"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="45dip"
+            android:background="@drawable/singvotebtn" />
+    </RelativeLayout>
+
+     <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:spacing="40dip"
+        android:layout_below="@id/inputarea"
+        android:layout_marginTop="20dip" /> 
+
+</RelativeLayout>

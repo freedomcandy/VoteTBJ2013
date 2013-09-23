@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_bg480x800" >
+
+    <ImageView
+        android:id="@+id/vote_image"
+        android:layout_width="89px"
+        android:layout_height="89px"
+        android:layout_marginLeft="1dip"
+        android:layout_marginTop="1dip"
+        android:focusable="false"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/getvote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="1dip"
+        android:layout_marginTop="1dip"
+        android:background="@drawable/votelistbtn"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/votename"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/getvote"
+        android:layout_toRightOf="@id/vote_image"
+        android:focusable="false"
+        android:singleLine="true"
+        android:text="xxxxxx"
+        android:textColor="@color/input_name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/votedes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/votename"
+        android:layout_toLeftOf="@id/getvote"
+        android:layout_toRightOf="@id/vote_image"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:singleLine="true"
+        android:text="xxxxxx"
+        android:textColor="@color/description" />
+
+</RelativeLayout>

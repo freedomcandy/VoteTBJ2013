@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgs480x800"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+     >
+
+    <ImageView
+        android:id="@+id/categorytitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_title480x800" />
+
+    <ListView
+        android:id="@+id/categorylist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/categorytitle"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/input_name"
+        android:dividerHeight="1px"
+        android:fadeScrollbars="false"
+        android:focusable="false"
+        android:listSelector="#41e9f3"
+        android:scrollbarThumbVertical="@drawable/listline"
+        android:scrollbarFadeDuration="0" />
+
+</RelativeLayout>
+
+<!-- android:fastScrollEnabled="true" -->
